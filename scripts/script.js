@@ -1,7 +1,14 @@
 let totalPrice = 0;
 let ticketCount = 0;
 
+const applyButton  = document.getElementById('apply-btn');
+applyButton.disabled = true; 
+//disable next button
+const nextButton = document.getElementById("next-btn");
+nextButton.disabled = true;
+
 const badges =document.querySelectorAll(".badge");
+
 
 for (let index = 0; index < badges.length; index++) {
     const badge = badges[index];
@@ -10,13 +17,20 @@ for (let index = 0; index < badges.length; index++) {
     badge.addEventListener("click", function(){
 // Check if maximum number of tickets have been selected
         if (ticketCount >= 4) {
-            
+
             alert("You can only select up to 4 tickets.");
             return;
         }
 
     
-const title = badge.innerText;
+// Check if the badge has already been clicked
+if (this.classList.contains("disabled")) {
+    alert("This ticket has already been selected.");
+    return;
+}
+
+const title = this.innerText;
+
 
 
 
@@ -49,6 +63,16 @@ const grandTotal= document.getElementById('grand-total');
 grandTotal.innerText =totalPrice;
 ticketCount++;
 
+this.classList.add("disabled");
+// Remove click event listener to disable further clicks
+this.removeEventListener("click", arguments.callee);
+
+if (ticketCount >= 4) {
+    applyButton.disabled = false; 
+}
+if(ticketCount > 0){
+    nextButton.disabled = false;
+}
     }
     )
     
@@ -80,18 +104,23 @@ const selectedTicket = event.key;
     
 }
 
-const applyButton  = document.getElementById('apply-btn');
+
+
+
 applyButton.addEventListener("click", function(){
 
-    const couponElement = document.getElementById('input-field').value;
-       const couponCode = couponElement.split(' ').join('').toUpperCase();
+    const couponCode = document.getElementById('input-field').value;
+     
 
        if (totalPrice >= 2200) {
         if (couponCode === 'NEW15') {
             const discountElement = document.getElementById('discount-price');
+
+            console.log(discountElement)
             const discount = totalPrice * 0.15;
             discountElement.innerText = discount;
-            discountElement.classList.remove("hidden");
+
+             
             // Hide apply button
             const couponField = document.getElementById("coupon-field");
             couponField.classList.add("hidden");
@@ -101,12 +130,12 @@ applyButton.addEventListener("click", function(){
             grandTotal.innerText = grandTotalText;
             document.getElementById('input-field').value = "";
             return grandTotalText;
-        } else if (couponCode === 'COUPLE20') {
-            console.log("clicked")
+        } else if (couponCode === 'Couple 20') {
+           
             const discountElement = document.getElementById('discount-price');
             const discount = totalPrice * 0.20;
             discountElement.innerText = discount;
-            discountElement.classList.remove("hidden");
+            
             // Hide apply button
             const couponField = document.getElementById("coupon-field");
             couponField.classList.add("hidden");
@@ -124,5 +153,22 @@ applyButton.addEventListener("click", function(){
     
 })
 
-
+function showModal(){
+ const show =   document.getElementById("modal");
  
+show.classList.remove("hidden");
+const main = document.getElementById("main");
+main.classList.add("hidden")
+}
+function returnHome(){
+    const returnHome = document.getElementById("main");
+    returnHome.classList.remove("hidden")
+    const show = document.getElementById("modal");
+    show.classList.add("hidden");
+    
+}
+
+ function displayDiscount(){
+    const displayDiscount = document.getElementById("discountPrice");
+    displayDiscount.classList.remove("hidden");
+ }
