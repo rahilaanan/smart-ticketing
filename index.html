@@ -36,7 +36,7 @@
 </head>
 <body >
   <section id="main">
-    <header>
+    <header class="p-[5%]">
         <!--navbar-->
     <section class="max-w-screen-xl mx-auto">
         <div class="navbar bg-base-100">
@@ -72,7 +72,7 @@
 <!--banner starts here-->
     <section class="max-w-screen-xl mx-auto relative">
 
-        <div class="bg-[url(./images/banner.png)] bg-no-repeat bg-cover h-[600px] opacity-90  ">
+        <div class="bg-[url(./images/banner.png)] bg-no-repeat bg-cover h-[600px] opacity-90 bg-center rounded-2xl ">
             
             <div class="flex flex-col justify-center items-center h-full gap-5">
                 <h1 class="text-3xl lg:text-5xl text-white font-extrabold">End-to-End Travel with</h1>
@@ -115,35 +115,35 @@
 
 
 
-   <main >
+   <main class="p-[5%]">
      <!--best offers-->
      <section class="max-w-screen-xl mx-auto">
         <h1 class="text-center text-3xl font-bold mt-[550px] lg:mt-44 lg:mb-10 ">Best offers for you</h1>
         <div class="lg:flex justify-around space-y-4 lg:space-y-0 p-[14%] lg:p-0 ">
-            <div class="bg-[#ffbf0f] flex justify-center items-center  rounded-xl lg:w-[600px] gap-4">
+            <div class="bg-[#ffbf0f] flex justify-center items-center  rounded-xl lg:w-[600px] lg:gap-4 px-2">
                 <div class="space-y-2">
-                    <h1 class="text-4xl font-extrabold">15% OFF</h1>
+                    <h1 class="lg:text-4xl text-2xl  font-extrabold">15% OFF</h1>
                 <p class="font-bold">on your next purchase</p>
                 <p class="text-slate-600">use by January 2024</p>
                 </div>
                 <img  src="images/cupon-devider.png" alt="">
             <div class="space-y-2">
-                <h1 class="text-4xl font-bold">NEW<sub class="text-2xl font-bold">15</sub></h1><p class="text-slate-600">Coupon Code</p>
+                <h1 class="lg:text-4xl font-bold">NEW<sub class="lg:text-2xl font-bold">15</sub></h1><p class="text-slate-600">Coupon Code</p>
             </div>
             </div>
-            <div class="bg-[#f78c9c] flex justify-center items-center  rounded-xl lg:w-[600px] gap-1 lg:gap-4">
+            <div class="bg-[#f78c9c] flex justify-center items-center  rounded-xl lg:w-[600px] lg:gap-4 px-1">
                 <div class="space-y-2">
-                    <h1 class="text-4xl font-extrabold">20% OFF</h1>
+                    <h1 class="lg:text-4xl text-2xl font-extrabold">20% OFF</h1>
                 <p class="font-bold">on your next purchase</p>
                 <p class="text-slate-600">use by January 2024</p>
                 </div>
                 <img  src="images/cupon-devider.png" alt="">
             <div class="space-y-2">
-                <h1 class="text-4xl font-bold">Couple 20</h1><p class="text-slate-600">Coupon Code</p>
+                <h1 class="lg:text-4xl  font-bold">Couple 20</h1><p class="text-slate-600 ">Coupon Code</p>
             </div>
             </div>
         </div>
-        <div class="flex justify-center lg:my-16">
+        <div class="flex justify-center lg:my-16 my-5">
             <button class="btn border-green-500 text-green-500 bg-white text-lg ">See All Offers</button>
         </div>
             </section>
@@ -156,11 +156,11 @@
 <!--ticket starts-->
 
 
-<div class="flex justify-around items-center bg-white rounded-3xl lg:w-5/6 mx-auto mt-16">
+<div class="flex justify-around items-center bg-white rounded-3xl lg:w-5/6 mx-auto mt-16  ">
     <div>
         <!--div1-->
-<div>
-    <div class="flex justify-between ">
+<div class="lg:w-[900px] w-full">
+    <div class="lg:flex justify-between space-y-6 lg:space-y-0 ">
         <div class="flex gap-4 justify-center items-center">
             <img src="images/bus-logo.png" alt="">
             <div><h1 class="font-semibold text-xl lg:text-3xl">GreenLine Paribahan</h1>
@@ -174,7 +174,7 @@
     </div>
 
     
-    <div class="bg-slate-50 rounded-3xl space-y-10 p-6">
+    <div class="bg-slate-50 rounded-3xl space-y-10 p-6 mt-4 ">
         <div class="flex justify-between">
             <p class="text-slate-500 font-bold">Route</p>
             <p class="font-bold">Dhaka - Sylhet</p>
@@ -226,39 +226,39 @@
 <div class="btn w-32 h-16 bg-gray-200 float-end"><img class="w-10" src="https://cdn-icons-png.flaticon.com/128/950/950497.png" loading="lazy" alt="Steering wheel " title="Steering wheel " width="64" height="64"></div>
 
 <!--seat numbers--------->
-<div id="ticket-container" class="grid grid-cols-4 mt-32 lg:mt-40 gap-10">
-  <div onclick="highlightTickets('A1');" id="A1" class="badge badge-ghost px-10 py-9 rounded-2xl text-lg">A1</div>
-  <div onclick="highlightTickets('A2');" id="A2" class="badge badge-ghost px-10 py-9 rounded-2xl text-lg">A2</div>
-  <div onclick="highlightTickets('A3');" id="A3" class="badge badge-ghost px-10 py-9 rounded-2xl text-lg">A3</div>
-  <div onclick="highlightTickets('A4');" id="A4" class="badge badge-ghost px-10 py-9 rounded-2xl text-lg">A4</div>
-  <div onclick="highlightTickets('B1');" id="B1" class="badge badge-ghost px-10 py-9 rounded-2xl text-lg">B1</div>
-  <div onclick="highlightTickets('B2');" id="B2" class="badge badge-ghost px-10 py-9 rounded-2xl text-lg">B2</div>
-  <div onclick="highlightTickets('B3');" id="B3" class="badge badge-ghost px-10 py-9 rounded-2xl text-lg">B3</div>
-  <div onclick="highlightTickets('B4');" id="B4" class="badge badge-ghost px-10 py-9 rounded-2xl text-lg">B4</div>
-  <div onclick="highlightTickets('C1');" id="C1" class="badge badge-ghost px-10 py-9 rounded-2xl text-lg">C1</div>
-  <div onclick="highlightTickets('C2');" id="C2" class="badge badge-ghost px-10 py-9 rounded-2xl text-lg">C2</div>
-  <div onclick="highlightTickets('C3');" id="C3" class="badge badge-ghost px-10 py-9 rounded-2xl text-lg">C3</div>
-  <div onclick="highlightTickets('C4');" id="C4" class="badge badge-ghost px-10 py-9 rounded-2xl text-lg">C4</div>
-  <div onclick="highlightTickets('D1');" id="D1" class="badge badge-ghost px-10 py-9 rounded-2xl text-lg">D1</div>
-  <div onclick="highlightTickets('D2');" id="D2" class="badge badge-ghost px-10 py-9 rounded-2xl text-lg">D2</div>
-  <div onclick="highlightTickets('D3');" id="D3" class="badge badge-ghost px-10 py-9 rounded-2xl text-lg">D3</div>
-  <div onclick="highlightTickets('D4');" id="D4" class="badge badge-ghost px-10 py-9 rounded-2xl text-lg">D4</div>
-  <div onclick="highlightTickets('E1');" id="E1" class="badge badge-ghost px-10 py-9 rounded-2xl text-lg">E1</div>
-  <div onclick="highlightTickets('E2');" id="E2" class="badge badge-ghost px-10 py-9 rounded-2xl text-lg">E2</div>
-  <div onclick="highlightTickets('E3');" id="E3" class="badge badge-ghost px-10 py-9 rounded-2xl text-lg">E3</div>
-  <div onclick="highlightTickets('E4');" id="E4" class="badge badge-ghost px-10 py-9 rounded-2xl text-lg">E4</div>
-  <div onclick="highlightTickets('F1');" id="F1" class="badge badge-ghost px-10 py-9 rounded-2xl text-lg">F1</div>
-  <div onclick="highlightTickets('F2');" id="F2" class="badge badge-ghost px-10 py-9 rounded-2xl text-lg">F2</div>
-  <div onclick="highlightTickets('F3');" id="F3" class="badge badge-ghost px-10 py-9 rounded-2xl text-lg">F3</div>
-  <div onclick="highlightTickets('F4');" id="F4" class="badge badge-ghost px-10 py-9 rounded-2xl text-lg">F4</div>
-  <div onclick="highlightTickets('G1');" id="G1" class="badge badge-ghost px-10 py-9 rounded-2xl text-lg">G1</div>
-  <div onclick="highlightTickets('G2');" id="G2" class="badge badge-ghost px-10 py-9 rounded-2xl text-lg">G2</div>
-  <div onclick="highlightTickets('G3');" id="G3" class="badge badge-ghost px-10 py-9 rounded-2xl text-lg">G3</div>
-  <div onclick="highlightTickets('G4');" id="G4" class="badge badge-ghost px-10 py-9 rounded-2xl text-lg">G4</div>
-  <div onclick="highlightTickets('H1');" id="H1" class="badge badge-ghost px-10 py-9 rounded-2xl text-lg">H1</div>
-  <div onclick="highlightTickets('H2');" id="H2" class="badge badge-ghost px-10 py-9 rounded-2xl text-lg">H2</div>
-  <div onclick="highlightTickets('H3');" id="H3" class="badge badge-ghost px-10 py-9 rounded-2xl text-lg">H3</div>
-  <div onclick="highlightTickets('H4');" id="H4" class="badge badge-ghost px-10 py-9 rounded-2xl text-lg">H4</div>
+<div id="ticket-container" class="grid grid-cols-4 mt-32 lg:mt-40 lg:gap-1px-7 lg:0 gap-3">
+  <div onclick="highlightTickets('A1');" id="A1" class="badge badge-ghost px-7 lg:px-10 py-9 rounded-2xl text-lg">A1</div>
+  <div onclick="highlightTickets('A2');" id="A2" class="badge badge-ghost px-7 lg:px-10 py-9 rounded-2xl text-lg">A2</div>
+  <div onclick="highlightTickets('A3');" id="A3" class="badge badge-ghost px-7 lg:px-10 py-9 rounded-2xl text-lg">A3</div>
+  <div onclick="highlightTickets('A4');" id="A4" class="badge badge-ghost px-7 lg:px-10 py-9 rounded-2xl text-lg">A4</div>
+  <div onclick="highlightTickets('B1');" id="B1" class="badge badge-ghost px-7 lg:px-10 py-9 rounded-2xl text-lg">B1</div>
+  <div onclick="highlightTickets('B2');" id="B2" class="badge badge-ghost px-7 lg:px-10 py-9 rounded-2xl text-lg">B2</div>
+  <div onclick="highlightTickets('B3');" id="B3" class="badge badge-ghost px-7 lg:px-10 py-9 rounded-2xl text-lg">B3</div>
+  <div onclick="highlightTickets('B4');" id="B4" class="badge badge-ghost px-7 lg:px-10 py-9 rounded-2xl text-lg">B4</div>
+  <div onclick="highlightTickets('C1');" id="C1" class="badge badge-ghost px-7 lg:px-10 py-9 rounded-2xl text-lg">C1</div>
+  <div onclick="highlightTickets('C2');" id="C2" class="badge badge-ghost px-7 lg:px-10 py-9 rounded-2xl text-lg">C2</div>
+  <div onclick="highlightTickets('C3');" id="C3" class="badge badge-ghost px-7 lg:px-10 py-9 rounded-2xl text-lg">C3</div>
+  <div onclick="highlightTickets('C4');" id="C4" class="badge badge-ghost px-7 lg:px-10 py-9 rounded-2xl text-lg">C4</div>
+  <div onclick="highlightTickets('D1');" id="D1" class="badge badge-ghost px-7 lg:px-10 py-9 rounded-2xl text-lg">D1</div>
+  <div onclick="highlightTickets('D2');" id="D2" class="badge badge-ghost px-7 lg:px-10 py-9 rounded-2xl text-lg">D2</div>
+  <div onclick="highlightTickets('D3');" id="D3" class="badge badge-ghost px-7 lg:px-10 py-9 rounded-2xl text-lg">D3</div>
+  <div onclick="highlightTickets('D4');" id="D4" class="badge badge-ghost px-7 lg:px-10 py-9 rounded-2xl text-lg">D4</div>
+  <div onclick="highlightTickets('E1');" id="E1" class="badge badge-ghost px-7 lg:px-10 py-9 rounded-2xl text-lg">E1</div>
+  <div onclick="highlightTickets('E2');" id="E2" class="badge badge-ghost px-7 lg:px-10 py-9 rounded-2xl text-lg">E2</div>
+  <div onclick="highlightTickets('E3');" id="E3" class="badge badge-ghost px-7 lg:px-10 py-9 rounded-2xl text-lg">E3</div>
+  <div onclick="highlightTickets('E4');" id="E4" class="badge badge-ghost px-7 lg:px-10 py-9 rounded-2xl text-lg">E4</div>
+  <div onclick="highlightTickets('F1');" id="F1" class="badge badge-ghost px-7 lg:px-10 py-9 rounded-2xl text-lg">F1</div>
+  <div onclick="highlightTickets('F2');" id="F2" class="badge badge-ghost px-7 lg:px-10 py-9 rounded-2xl text-lg">F2</div>
+  <div onclick="highlightTickets('F3');" id="F3" class="badge badge-ghost px-7 lg:px-10 py-9 rounded-2xl text-lg">F3</div>
+  <div onclick="highlightTickets('F4');" id="F4" class="badge badge-ghost px-7 lg:px-10 py-9 rounded-2xl text-lg">F4</div>
+  <div onclick="highlightTickets('G1');" id="G1" class="badge badge-ghost px-7 lg:px-10 py-9 rounded-2xl text-lg">G1</div>
+  <div onclick="highlightTickets('G2');" id="G2" class="badge badge-ghost px-7 lg:px-10 py-9 rounded-2xl text-lg">G2</div>
+  <div onclick="highlightTickets('G3');" id="G3" class="badge badge-ghost px-7 lg:px-10 py-9 rounded-2xl text-lg">G3</div>
+  <div onclick="highlightTickets('G4');" id="G4" class="badge badge-ghost px-7 lg:px-10 py-9 rounded-2xl text-lg">G4</div>
+  <div onclick="highlightTickets('H1');" id="H1" class="badge badge-ghost px-7 lg:px-10 py-9 rounded-2xl text-lg">H1</div>
+  <div onclick="highlightTickets('H2');" id="H2" class="badge badge-ghost px-7 lg:px-10 py-9 rounded-2xl text-lg">H2</div>
+  <div onclick="highlightTickets('H3');" id="H3" class="badge badge-ghost px-7 lg:px-10 py-9 rounded-2xl text-lg">H3</div>
+  <div onclick="highlightTickets('H4');" id="H4" class="badge badge-ghost px-7 lg:px-10 py-9 rounded-2xl text-lg">H4</div>
 </div>
         
     </div>
@@ -298,7 +298,7 @@
           <p class="">Total Price</p><p><span id="total-price"></span> BDT</p>
           </div>
           <div id="coupon-field" class="flex rounded-xl p-6 " >
-            <input id="input-field" type="text" placeholder="Have any coupon?" class="w-[65%] ml-14 pl-6">
+            <input id="input-field" type="text" placeholder="Have any coupon?" class="w-[65%] lg:ml-14 pl-6">
             <button onclick="displayDiscount()" id="apply-btn" class="btn bg-green-500 text-white text-xl ">Apply</button>
           </div>
           <div id="discountPrice" class="flex justify-around hidden text-lg font-medium text-black">

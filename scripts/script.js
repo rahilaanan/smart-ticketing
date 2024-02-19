@@ -18,7 +18,7 @@ for (let index = 0; index < badges.length; index++) {
 // Check if maximum number of tickets have been selected
         if (ticketCount >= 4) {
 
-            alert("You can only select up to 4 tickets.");
+    alert("You can only select up to 4 tickets.");
             return;
         }
 
@@ -66,7 +66,7 @@ ticketCount++;
 this.classList.add("disabled");
 // Remove click event listener to disable further clicks
 this.removeEventListener("click", arguments.callee);
-
+//enable buttons
 if (ticketCount >= 4) {
     applyButton.disabled = false; 
 }
@@ -91,6 +91,7 @@ const selectedTicket = event.key;
 
  if(ticketCount > 4){
     alert("Cannot select more than 4 tickets");
+    return;
     }
     
     const currentSeatAvailable = getSeatNumbers('total-seats');
